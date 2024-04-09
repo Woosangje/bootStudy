@@ -35,7 +35,7 @@ Package는 jar<br>
 Spring Boot Dev Tools<br>
 Lombok,
 ,Spring web
-,Spring Security
+,Spring Security// Security는 아님
 ,Thymeleaf
 ,MariaDB Driver(오라클,마리아DB가 반절씩)
 ,Spring Data JPA<br>
