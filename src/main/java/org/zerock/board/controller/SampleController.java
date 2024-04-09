@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.board.dto.SampleDTO;
 
 import java.time.LocalDateTime;
@@ -28,7 +29,7 @@ public class SampleController {
          // resources/templates/sample/ex1.html
      }
 
-     @GetMapping("/ex2") // http://localhost/sample.ex2.html
+     @GetMapping({"/ex2", "/exLink"}) // http://localhost/sample.ex2.html
      public void exModel(Model model){
         // Spring은 Model 타입으로 모든 객체나 데이터를 가지고 있다.
          List<SampleDTO> list = IntStream.rangeClosed(1, 20)
@@ -45,4 +46,34 @@ public class SampleController {
          model.addAttribute("list",list);  // 모델에 1개의 객체를 담음
          // 프론트에서 list를 호출하면 list 객체가 나옴
      }
+
+     @GetMapping({"/exInline"})
+    public String exInline(RedirectAttributes redirectAttributes){
+
+         log.info("exInline........");
+
+         SampleDTO dto = SampleDTO.builder()
+                 .sno(100L)
+                 .first("First..100")
+                 .last("Last...100")
+                 .regTime(LocalDateTime.now())
+                 .build();
+         redirectAttributes.addFlashAttribute("result", "success");
+         redirectAttributes.addFlashAttribute("dto", dto);
+
+         return "redirect:/sample/ex3";
+     }
+
+     @GetMapping("/ex3")
+    public void ex3(){
+
+         log.info("ex3");
+     }
+
+     @GetMapping({"/exLayout1", "/exLayout2", "/exTemplate", "/exSidebar"})
+    public void exLayout1(){
+         log.info("exLayout............");
+     }
+
+
 }

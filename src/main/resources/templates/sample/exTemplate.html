@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout/layout1 :: setContent(~{this::content} )}">
+<!-- 전부 가져온 다음에 content클래스만 전달한다..-->
+  <th:block th:fragment="content">
+
+    <h1>exTemplate Page</h1>
+
+  </th:block>
+</th:block>
+
+</html>
