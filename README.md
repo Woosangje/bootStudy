@@ -139,3 +139,43 @@ Pageable는 domain으로 import해야한다.<br>
 
 82p<br>
 ★ tests 실행할때 오류 생기면 mariaDB설치하기<br>
+
+
+#0409<br>
+
+★aws에서 css깨질경우 resources/ 경로 확인해 볼것<br>
+★ test실행 안되면 build.gradle에서 security주석처리할것 그래도 안되면 db도 주석처리해볼것<br>
+db도 연결되어 있어야 test가능<br>
+//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'<br>
+//implementation 'org.springframework.boot:spring-boot-starter-security'<br>
+//implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'<br>
+//runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'<br>
+//testImplementation 'org.springframework.security:spring-security-test'<br>
+
+워크북, 쇼핑몰프로젝트 2권남기기<br>
+목요일 노트북 가져오기<br>
+집에서 할일 movie db create하고 aws에서 실행해보기<br>
+★ 톰켓은 application.properties에 있다. 별도 설치 안함<br>
+
+
+★ https://github.com/lonen8188/Springboot/blob/1.memo/src/main/java/org/zerock/boardboot/repository/MemoRepository.java<br>
+JPA-참조 문서 > 3.참고문서 > 3.1JPA저장소 > 3.1.3 쿼리방법 > 쿼리 생성<br>
+
+Mno : 메모의 번호<br>
+
+★ 쿼리문은 대문자로, input박스는 대소문자 일치시킬것<br>
+countQuery 몇개의 페이지를 담을 것인가<br>
+Thymeleaf는 jsp에서 html로 돌아온것 <br>
+Mustache 배우는데 1주일 걸린다.취업하고서를 회사에서 필요하면 그때 공부할것<br>
+★ build.gradle 수정하면 코끼리 누르기<br>
+
+★ 실행오류뜨면 int updateMemoBean 주석처리하기<br>
+★http://www.thymeleaf.org에서 공부하기<br>
+★" "안에는 무조건 ' '<br>
+★ 자바 beans 규약<br>
+웹에서 실행하고 싶으면 실행 >왼쪽에있는 drop bar를 BoardApplication으로 설정해야한다.<br>
+
+☆ 부트스트랩은 선생님자료 참고할것<br>
+☆ 104p책보고하다가 코드가 이상하면 선생님 깃허브 참조하기(build gradle쪽 예: 날짜 처리관련 코드)<br>
+
+122p까지완료<br>
