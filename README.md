@@ -31,13 +31,13 @@ Artiface는 www<br>
 name www<br>
 Package는 jar<br>
 버전은 17<br>
-오른쪽 add dependencies<br>
-Spring Boot Dev Tools<br>
-Lombok,
-,Spring web
-,Spring Security// Security는 아님
-,Thymeleaf
-,MariaDB Driver(오라클,마리아DB가 반절씩)
+○ 오른쪽 add dependencies<br>
+Spring Boot Dev Tools,<br>
+Lombok,<br>
+,Spring web<br>
+,Spring Security// Security는 아님<br>
+,Thymeleaf<br>
+,MariaDB Driver(오라클,마리아DB가 반절씩)<br>
 ,Spring Data JPA<br>
 
 boot-workspace폴더 생성하고 www폴더 옮긴다.<br>
