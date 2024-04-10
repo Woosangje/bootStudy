@@ -18,7 +18,7 @@ Path에 "bin"폴더 추가 on하기<br>
 
 앞으로는 스프링을 부트라고 생각해야한다.<br>
 
-크롬에 spring io 검색<br>
+★ 크롬에 spring io 검색<br>
 
 spring framwork가 spring<br>
 
