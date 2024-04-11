@@ -180,3 +180,42 @@ Mustache 배우는데 1주일 걸린다.취업하고서를 회사에서 필요�
 
 122p까지완료<br>
 내일 was어떻게 실행해야할지 선생님에게 물어보기 시간낭비가 너무심하다
+
+
+#0409<br>
+122p 실행 안되면 선생님거 참조하기<br>
+★★★브런치 만드는 방법  브런치누르고 새브런치: ThymeleafAdd <br>
+프로젝트 덮어씌운 후 소스트리에서 올리고 커밋에 "타임리프테스트" > 커밋,푸쉬<br>
+
+xml대신 Repository계층에서 작업<br>
+시큐리티 전까지 하는게 미션<br>
+
+★ query dsl 구글검색<br>
+책에있는 query dsl는 작동안한다 깃허브 참조 할것<br>
+https://github.com/lonen8188/Springboot/blob/2.ThymeleafAdd/build.gradle<br>
+수정하고 코끼리 누르기<br>
+
+엔티티 클래스는 가능하면 setter만들기 않기 setter대신 changeContet로 선언<br>
+
+152p<br>
+https://green-bin.tistory.com/106<br>
+sout + tab<br>
+
+★ 즉시(Eager)fheldrhk 지연(Lazy)로딩 이해하기 221p<br>
+447p까지 미션<br>
+강사님 Springboot 진도별로 branch해놓으셨음 참고할것<br>
+인텔리j설치할때 jdk17설치해야한다.<br>
+179p까지완료<br>
+
+
+★ 원격연결 순서<br>
+1. pro업그레이드  https://itcider.com/1572/ 안되면 와이파이 끄기<br>
+2. 사용자 / pw 필수 (시작 우클릭 -> 컴퓨터 관리 -> 사용자 계정 -> id 우클릭 -> 암호설정)<br>
+3. 시작 우클릭 -> 시스템 ->원격데스크톱 활성화<br>
+4. ip주소 알아내기 -> ipconfig<br>
+5. 노트북 덥개 닫으면 아무것도 하지 않음 셋팅<br>
+제어판 -> 전원옵션<br>
+6. 인텔리 제이 설치 및 셋팅<br>
+----------------------------------------------------- 노트북<br>
+
+학교 px -> 원격 데스크탑 연결(시스템이아닌 찾기로검색) -> ip 입력 -> id/pw 접속 성공!!!!<br>
