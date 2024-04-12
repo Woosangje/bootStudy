@@ -11,8 +11,8 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import java.time.LocalDateTime;
 
 @MappedSuperclass //직접 테이블용은 아님을 명시
-@Getter // 게터
 @EntityListeners(value = AuditingEntityListener.class)
+@Getter // 게터
 //세터 대신 감시용 코드 (데이터 변경을 감지하여 적용 -> Main메서드에 추가코드 필수
 abstract public class BaseEntity { // abstract 상속간에 추상클래스 동작
     //테이블이 공통되는 부분을 상속해줄 클래스
