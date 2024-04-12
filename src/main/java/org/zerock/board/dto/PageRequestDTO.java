@@ -20,10 +20,11 @@ public class PageRequestDTO<DTO, EN> {
     //총 페이지 번호
     private int totalPage;
 
-    private int page;    //현재 페이지 번호
-    private int size;    //목록 사이즈
-    private String type; //검색용 타입
-    private String keyword; // 검색용 키워드
+    //현재 페이지 번호
+    private int page;
+    //목록 사이즈
+    private int size;
+
 
     public PageRequestDTO(){
         this.page = 1;
