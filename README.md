@@ -219,3 +219,8 @@ sout + tab<br>
 ----------------------------------------------------- 노트북<br>
 
 학교 px -> 원격 데스크탑 연결(시스템이아닌 찾기로검색) -> ip 입력 -> id/pw 접속 성공!!!!<br>
+
+
+#0412
+https://github.com/lonen8188/WorkBook/blob/master/src/main/resources/templates/board/list.html
+237p
