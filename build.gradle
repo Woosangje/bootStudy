@@ -1,3 +1,12 @@
+buildscript {
+    ext {
+        queryDslVersion = "5.0.0"
+    }
+} // 쿼리dsl 버전 관리 (http://www.querydsl.com)
+// 쿼리dsl Qdomain 셍성 -> Gradle -> Tasks -> other -> complieJava
+// 쿼리dsl Qdomain 셍성 오류시 Gradle -> Tasks -> build -> Clean -> 셍성
+
+
 plugins {
     id 'java'
     id 'war'
@@ -39,6 +48,34 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test' //테스트 환경 구축
     //날짜 처리 관련 코드
     implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.3.3'
+
+    //쿼리dsl 관련 설정 추가
+    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"
+
+    annotationProcessor(//쿼리dsl 관련 설정 추가
+
+            // 톰켓 9 용 "javax.persistence:javax.persistence-api",
+            // 톰켓 9 용 "javax.annotation:javax.annotation-api",
+            // 톰켓 9 용 "com.querydsl:querydsl-apt:${queryDslVersion}:jpa"
+
+            // 톰켓 10 용
+            "jakarta.persistence:jakarta.persistence-api",
+            "jakarta.annotation:jakarta.annotation-api",
+            "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"
+    )
+    // 모델 처리를 위한 라이브러리 (DTO와 엔티티간의 변환 처리용) -> config.RootConfig에 적용
+    implementation 'org.modelmapper:modelmapper:3.1.0'
+    // 레이아웃 기능을 위한 라이브러리 xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" html 추가 필수
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.1.0'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // json 테스트용 -> postman 사용해도 무관 -> 부트3에서 작동 안함
+    //     https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    //     implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    //     https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
+    //     implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+    // 오픈소스 사용으로 변경
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 }
 
 tasks.named('bootBuildImage') {
@@ -48,3 +85,38 @@ tasks.named('bootBuildImage') {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+compileJava.dependsOn('clean') // 톰켓 10용
+// 톰켓 9용
+configurations {
+    querydsl.extendsFrom compileClasspath
+}
+
+// 톰켓 9용
+//compileQuerydsl {
+//    options.annotationProcessorPath = configurations.querydsl
+//}
+
+sourceSets {
+    // 톰켓 9용 main.java.srcDir querydslDir
+
+    // 톰켓 10용
+    main {
+        java {
+            srcDirs = ["$projectDir/src/main/java", "$projectDir/build/generated"]
+        }
+    }
+
+}
+
+
+compileJava.dependsOn('clean') // 톰켓 10용
+// 톰켓 9용
+//configurations {
+//    querydsl.extendsFrom compileClasspath
+//}
+
+// 톰켓 9용
+//compileQuerydsl {
+//    options.annotationProcessorPath = configurations.querydsl
+//}

@@ -9,6 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Commit;
+import org.zerock.board.entity.Member;
 import org.zerock.board.entity.Memo;
 
 import java.util.List;
@@ -19,6 +20,9 @@ public class MemoRepositoryTests {
 
     @Autowired // 생성자 자동 주입
     MemoRepository memoRepository;
+
+    @Autowired
+    private MemberRepository memberRepository;
 
     @Test
     public void testClass(){
@@ -182,5 +186,21 @@ public class MemoRepositoryTests {
     public void testDeleteQueryMethods(){
         // 쿼리 메서드로 delete 처리를 하면 9번의 쿼리문이 전달 됨 (비효율적) -> @Query를 사용해야 좋다.
         memoRepository.deleteMemoByMnoLessThan(10L);
+    }
+
+    //part3
+    @Test
+    public void insertMembers(){
+
+        IntStream.rangeClosed(1,100).forEach(i -> {
+
+            Member member = Member.builder()
+                    .email("user" + i + "@aaa.com")
+                    .password("1111")
+                    .name("USER"+i)
+                    .build();
+
+            memberRepository.save(member);
+        });
     }
 }
