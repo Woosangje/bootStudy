@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.board.dto.GuestbookDTO;
 import org.zerock.board.dto.PageRequestDTO;
-import org.zerock.board.entity.Guestbook;
 import org.zerock.board.service.GuestbookService;
 
 @Controller
