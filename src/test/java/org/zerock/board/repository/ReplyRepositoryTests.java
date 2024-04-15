@@ -38,7 +38,7 @@ public class ReplyRepositoryTests {
     @Test
     public void readReply1(){
 
-        Optional<Reply> result = replyRepository.findById(1L);
+        Optional<Reply> result = replyRepository.findById(4L);
 
         Reply reply = result.get();
 
@@ -48,4 +48,3 @@ public class ReplyRepositoryTests {
     }
 
 }
-241p
