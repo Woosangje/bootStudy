@@ -12,6 +12,7 @@ plugins {
     id 'war'
     id 'org.springframework.boot' version '3.1.10'
     id 'io.spring.dependency-management' version '1.1.4'
+    // 사용안 함 id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10' //쿼리dsl 관련 설정 추가
 }
 
 group = 'org.zerock'
@@ -35,6 +36,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'  // db 하이버네이트용
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // 타입리스 프론트용
     implementation 'org.springframework.boot:spring-boot-starter-web'       // mvc
+
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -75,6 +77,9 @@ tasks.named('bootBuildImage') {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+//쿼리dsl 관련 설정 추가
+//def querydslDir = "$buildDir/generated/querydsl"
 
 compileJava.dependsOn('clean') // 톰켓 10용
 // 톰켓 9용
