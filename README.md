@@ -224,3 +224,21 @@ sout + tab<br>
 #0412
 https://github.com/lonen8188/WorkBook/blob/master/src/main/resources/templates/board/list.html
 237p
+
+#0416
+★316p 버튼 실행 안되면 javascript확인할것
+326부터시작하기
+
+
+★책에서 webuser계정과 db는 heidiSQL에서 알아서 만들기 
+CREATE DATABASE webdb;
+GRANT SELECT, INSERT, UPDATE, DELETE, DROP, ALTER ON webdb.* TO 'webuser' IDENTIFIED BY 'webuser'
+
+application.properties에서 db넣기
+dependencies에서 lombok넣기
+
+
+]http://192.168.0.150/board/list
+
+★ 만약 프로젝트 옮기면 해야할일
+heidiSQL에서 db의 데이터베이스 생성하고 root를 이용하여 계정도 다시 만들어야한다.
