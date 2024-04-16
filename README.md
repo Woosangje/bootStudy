@@ -221,21 +221,22 @@ sout + tab<br>
 학교 px -> 원격 데스크탑 연결(시스템이아닌 찾기로검색) -> ip 입력 -> id/pw 접속 성공!!!!<br>
 
 
-#0412
-https://github.com/lonen8188/WorkBook/blob/master/src/main/resources/templates/board/list.html
-237p
+#0412<br>
+https://github.com/lonen8188/WorkBook/blob/master/src/main/resources/templates/board/list.html<br>
 
-#0416
-★316p 버튼 실행 안되면 javascript확인할것
-326부터시작하기
+#0416<br>
+★316p 버튼 실행 안되면 javascript확인할것<br>
+326부터시작하기<br>
 
 
-★책에서 webuser계정과 db는 heidiSQL에서 알아서 만들기 
-CREATE DATABASE webdb;
-GRANT SELECT, INSERT, UPDATE, DELETE, DROP, ALTER ON webdb.* TO 'webuser' IDENTIFIED BY 'webuser'
+★책에서 webuser계정과 db는 heidiSQL에서 알아서 만들기 <br>
+CREATE DATABASE webdb;<br>
+GRANT SELECT, INSERT, UPDATE, DELETE, DROP, ALTER ON webdb.* TO 'webuser' IDENTIFIED BY 'webuser'<br>
 
-application.properties에서 db넣기
-dependencies에서 lombok넣기
+application.properties에서 db넣기<br>
+dependencies에서 lombok넣기<br>
+
+인텔리제이 웹 빌드안되고 오류 발생하면 db에서 database와 계정 생성했는지 확인할것
 
 
 ]http://192.168.0.150/board/list
