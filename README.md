@@ -242,4 +242,21 @@ dependencies에서 lombok넣기<br>
 ]http://192.168.0.150/board/list
 
 ★ 만약 프로젝트 옮기면 해야할일
-heidiSQL에서 db의 데이터베이스 생성하고 root를 이용하여 계정도 다시 만들어야한다.
+heidiSQL에서 db의 데이터베이스 생성하고 root를 이용하여 계정도 다시 만들어야한다.<br>
+
+#0417<br>
+document.querySelector는  html5문법<br>
+read.html<br>
+
+workbook에서 board와 member가 foreign 키 연결안되어있음<br>
+
+★ 오류<br>
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap<br>
+https://netcanis.tistory.com/85<br>
+
+#0418<br>
+수업자료에서 > 10.프로젝트 > 오늘의 대타 > 문서 참조할것 기본<br>
+
+워크북 이번주 Security까지 마감<br>
+4~5번 반복하고 이론 읽어보기<br>
+
