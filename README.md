@@ -260,3 +260,34 @@ https://netcanis.tistory.com/85<br>
 워크북 이번주 Security까지 마감<br>
 4~5번 반복하고 이론 읽어보기<br>
 
+erp
+기능 
+생산
+출고
+출입
+입고
+wms
+
+#0424
+
+ui는 보여주는거 back코드 ppt, 파일정의서, url정의서
+
+
+포폴에다가 조원소개 링크 만들어서 이력서 자소서 넣어보기
+개인소개페이지 실제로 할수있는 직무 능력만
+자바,오라클 마리아db 이클립스
+
+★ Application run failed
+org.springframework.beans.factory.BeanCreationException:
+오류발생하면 Post, get 잘못입력했는지 확인
+
+★ @Override 자동완성이 보이기만 하고 완성은 안되면 implements 상속가 있는지 확인
+
+★★★ ctrl shift f로 오류 찾을수 있음
+
+★DB에서 DB로 데이터를 옮기고 싶을때  하이디에서 데이터베이스를 다른 db로 내보네기
+삭제 버튼 체크하면 삭제된하 새로운 DB는 생성
+포트80번쓰지말고 조장 핸드폰 뒷자리로 80은 강사님이 쓰고 있음
+
+목표 공지페이지 > 시간남으면 상세정보(비밀번호, 이메일등)수정페이지
+
