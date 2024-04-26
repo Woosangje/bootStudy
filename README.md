@@ -291,3 +291,11 @@ org.springframework.beans.factory.BeanCreationException:
 
 목표 공지페이지 > 시간남으면 상세정보(비밀번호, 이메일등)수정페이지
 
+#0426
+
+Security, 카톡연동 그래들에서 주석처리 하고 clean할것
+
+★ @TestPropertySource는 application-test.properties사용안할거면 아예선언안해야한다 
+
+ 모두 출력하고 싶으면 Repository.findAll()
+
