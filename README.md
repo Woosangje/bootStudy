@@ -299,3 +299,4 @@ Security, 카톡연동 그래들에서 주석처리 하고 clean할것
 
  모두 출력하고 싶으면 Repository.findAll()
 
+★★★★★★ 로그인하고 error페이지로 이동하는거 물어보기
