@@ -261,42 +261,83 @@ https://netcanis.tistory.com/85<br>
 4~5번 반복하고 이론 읽어보기<br>
 
 erp
-기능 
-생산
-출고
-출입
-입고
+기능,생산,출고,출입,입고<br>
 wms
 
-#0424
+#0424<br>
 
-ui는 보여주는거 back코드 ppt, 파일정의서, url정의서
+ui는 보여주는거 back코드 ppt, 파일정의서, url정의서<br>
 
 
-포폴에다가 조원소개 링크 만들어서 이력서 자소서 넣어보기
-개인소개페이지 실제로 할수있는 직무 능력만
-자바,오라클 마리아db 이클립스
+포폴에다가 조원소개 링크 만들어서 이력서 자소서 넣어보기<br>
+개인소개페이지 실제로 할수있는 직무 능력만<br>
+자바,오라클 마리아db 이클립스<br>
 
-★ Application run failed
-org.springframework.beans.factory.BeanCreationException:
-오류발생하면 Post, get 잘못입력했는지 확인
+★ Application run failed org.springframework.beans.factory.BeanCreationException:
+오류발생하면 Post, get 잘못입력했는지 확인<br>
 
-★ @Override 자동완성이 보이기만 하고 완성은 안되면 implements 상속가 있는지 확인
+★ @Override 자동완성이 보이기만 하고 완성은 안되면 implements 상속가 있는지 확인<br>
 
-★★★ ctrl shift f로 오류 찾을수 있음
+★★★ ctrl shift f로 오류 찾을수 있음<br>
 
-★DB에서 DB로 데이터를 옮기고 싶을때  하이디에서 데이터베이스를 다른 db로 내보네기
-삭제 버튼 체크하면 삭제된하 새로운 DB는 생성
-포트80번쓰지말고 조장 핸드폰 뒷자리로 80은 강사님이 쓰고 있음
+★DB에서 DB로 데이터를 옮기고 싶을때  하이디에서 데이터베이스를 다른 db로 내보네기<br>
+삭제 버튼 체크하면 삭제된하 새로운 DB는 생성<br>
+포트80번쓰지말고 조장 핸드폰 뒷자리로 80은 강사님이 쓰고 있음<br>
 
-목표 공지페이지 > 시간남으면 상세정보(비밀번호, 이메일등)수정페이지
+목표 공지페이지 > 시간남으면 상세정보(비밀번호, 이메일등)수정페이지<br>
 
-#0426
+#0426<br>
 
-Security, 카톡연동 그래들에서 주석처리 하고 clean할것
+Security, 카톡연동 그래들에서 주석처리 하고 clean할것<br>
 
-★ @TestPropertySource는 application-test.properties사용안할거면 아예선언안해야한다 
+★ @TestPropertySource는 application-test.properties사용안할거면 아예선언안해야한다 <br>
 
- 모두 출력하고 싶으면 Repository.findAll()
+ 모두 출력하고 싶으면 Repository.findAll()<br>
 
-★★★★★★ 로그인하고 error페이지로 이동하는거 물어보기
+★★★★★★ 로그인하고 error페이지로 이동하는거 물어보기<br>
+
+
+#0429 공지페이지 <br>
+read완료<br>
+
+
+jpa를 안쓰는 회사가 많아진다.
+개인프로젝트는 spring 
+join, subquery 사용할줄 알아야한다.
+
+aws에 스프링 프로젝트 -> 클라우드에 옴길것<br>
+
+클라우드 서버 게시한 것을 목표<br>
+
+
+클라우드서버 조별로 비밀번호 바꾸기<br>
+
+
+
+웹 실행시 table missing오류 발생하<br>
+spring.jpa.hibernate.ddl-auto=update 로 수정할것<br>
+평소에 무조건 update이어야한다.<br>
+
+${item.itemSellStatus == T(com.shop.constant.ItemSellStatus).SELL} <br>
+com.shop인지 org.zerock인지 확실히 입력할것<br>
+
+admin/new, update 에서 에러 팝업 발생할 경우 db에서 item만 생성되고 item_img는 추가안되면<br>
+이미지 경로에 폴더가 없어서 그렇다. c/shop/item<br>
+
+★ notice_deail png오류 ./img를  ../img로 바꿔줘야한다.<br>
+
+★th:field ="*{ntitle}"같은거 인식 안될경우 *{noticeFormDto.nTitle} 처럼 작성한다.<br>
+"*{nTitle}" 빨간줄이어도 정상작동된다. 오히려 *{noticeFormDto.nTitle}가 작동안됨<br>
+html에서 빨간줄 떠도 작동 되면 신경쓰지말것<br>
+
+
+# 수정하기 버튼 누를경우 500에러뜨는건 PostMapper문제는아니다.<br>
+
+updatedate 해당날짜 입력하기<br>
+
+#0430 Notice/Modify PostMapping작업완료<br>
+
+
+register.html th:field="*{nContent}"부터다시작업하기<br>
+
+modify.html 취소하기 삭제하기 집에서작업할것<br>
