@@ -297,15 +297,13 @@ Security, 카톡연동 그래들에서 주석처리 하고 clean할것<br>
 ★★★★★★ 로그인하고 error페이지로 이동하는거 물어보기<br>
 
 
-#0429 공지페이지 <br>
-read완료<br>
-
+#0429
 
 jpa를 안쓰는 회사가 많아진다.
 개인프로젝트는 spring 
 join, subquery 사용할줄 알아야한다.
 
-aws에 스프링 프로젝트 -> 클라우드에 옴길것<br>
+aws에 스프링 프로젝트 -> 클라우드에 옮길것<br>
 
 클라우드 서버 게시한 것을 목표<br>
 
@@ -326,7 +324,37 @@ admin/new, update 에서 에러 팝업 발생할 경우 db에서 item만 생성�
 
 ★ notice_deail png오류 ./img를  ../img로 바꿔줘야한다.<br>
 
-★th:field ="*{ntitle}"같은거 인식 안될경우 *{noticeFormDto.nTitle} 처럼 작성한다.<br>
+★th:field ="*{ntitle}"같은거 
 "*{nTitle}" 빨간줄이어도 정상작동된다. 오히려 *{noticeFormDto.nTitle}가 작동안됨<br>
 html에서 빨간줄 떠도 작동 되면 신경쓰지말것<br>
+
+
+# 0502
+
+567월이 취업타이밍<br>
+
+이력서 ppt로 작성하여 보내기<br>
+김효곤 취업 팀장<br>
+팀원 한소연<br>
+T 031-253-5995<br>
+H010-5099-1463<br>
+F.070-8611-9616<br>
+E-mail. ssdgon@naver.com<br>
+
+
+다시 shop프로젝트 형식으로 되돌림<br>
+#notice crud 페이지완성<br>
+notice/list에서 read,modify로 이동할경우 keyword가져갈수있게 작업해야한다.<br>
+
+공유폴더 ogoods 참고하기<br>
+
+상품등록 정보 동규씨<br>
+
+
+게시판 내가 다하기: 문의게시판 리뷰게시판, 이벤트페이지<br>
+가격의 할인, 쿠폰 해보기, 설문조사에 참여하면 5000원 포인트 준다던지, 퀴즈<br>
+★조회수 NoticeService.java에서 (readOnly=true)로 선언해서 조회수 추가안되서 애먹음<br>
+
+
+
 
