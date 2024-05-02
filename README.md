@@ -330,14 +330,3 @@ admin/new, update 에서 에러 팝업 발생할 경우 db에서 item만 생성�
 "*{nTitle}" 빨간줄이어도 정상작동된다. 오히려 *{noticeFormDto.nTitle}가 작동안됨<br>
 html에서 빨간줄 떠도 작동 되면 신경쓰지말것<br>
 
-
-# 수정하기 버튼 누를경우 500에러뜨는건 PostMapper문제는아니다.<br>
-
-updatedate 해당날짜 입력하기<br>
-
-#0430 Notice/Modify PostMapping작업완료<br>
-
-
-register.html th:field="*{nContent}"부터다시작업하기<br>
-
-modify.html 취소하기 삭제하기 집에서작업할것<br>
