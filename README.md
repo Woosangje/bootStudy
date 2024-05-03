@@ -348,14 +348,34 @@ notice/list에서 read,modify로 이동할경우 keyword가져갈수있게 작�
 
 공유폴더 ogoods 참고하기<br>
 
-상품등록 정보 동규씨<br>
-
-
-게시판 내가 다하기: 문의게시판 리뷰게시판, 이벤트페이지<br>
-가격의 할인, 쿠폰 해보기, 설문조사에 참여하면 5000원 포인트 준다던지, 퀴즈<br>
 ★조회수 NoticeService.java에서 (readOnly=true)로 선언해서 조회수 추가안되서 애먹음<br>
 
+#0503
 
+일단은 다 붙이기
+시험 두과목씩 보아야함 spring, boot, c , phyton ,git 시간 나는대로 만들어서줘
+
+파이썬 정답 조원들끼리 이거는 하나씩 만들어보자 금요일
+
+★ redirectAttributes : 간단하게 설명하면 Post후 어디느 페이지로 이동할 것인지
+★ th:formaction="@{'/notice/modify/' + ${noticeFormDto.nno} }"  controller.java의 경로
+★ javascript에서 nno가 controller로 전달이 안된다.
+
+
+
+★포스트 맨 API사용할것
+★ NoticeService.java의 remove메소드에서 deleteById(nno)사용해도 된다.
+★ controller에서 @Valid, @PathVariable("nno") Long nno 로 매개변수선언해야 javascript에서 url받아올수 있다.
+★ Dto.java에서 int대신 Integer 쓰는 이유 : 가볍게 객체화하려고
+
+########   작업 #######
+
+https://fmflowermall.com/goods/goods_detail/prd_code/dbc188b6eb/cname/6r2D67CU6rWs64uI#goods_detail_tab5
+상품평, 이용후기
+게시판 내가 다하기: 문의게시판 리뷰게시판, 이벤트페이지
+가격의 할인, 쿠폰 해보기, 설문조사에 참여하면 5000원 포인트 준다던지, 퀴즈
+
+해야할일 member계정 간단하게 만들고 ItemReview와 ItemReviewImg를 연결한다.(는 static으로 관리하기)
 
 
 
