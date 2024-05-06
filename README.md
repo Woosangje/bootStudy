@@ -378,4 +378,27 @@ https://fmflowermall.com/goods/goods_detail/prd_code/dbc188b6eb/cname/6r2D67CU6r
 해야할일 member계정 간단하게 만들고 ItemReview와 ItemReviewImg를 연결한다.(는 static으로 관리하기)
 
 
+#0506<br>
+★ SecurityConfig.java에서 .requestMatchers로 선언한 경로만 로그인안하고 집입할 수 있다.<br>
+다른 경로는 로그인하고 나서 페이지 진입할 수있다.<br>
+
+register. 공백시 에러팝업 만들것<br>
+특이사항 평점 별
+그냥 드롭다운가지고 5점 인지 입력하자
+
+게시판 생성시 로그인된 정보 join하기
+
+css새로 작성해야 한다.
+
+#0506
+★ @NotBlank와 @NotEmpty 어노테이션은 문자열(String) 필드에만 적용가능하고, Integer 필드에는 @NotNull을 사용해야 한다!<br>
+
+★ 파일업로드 @Value("location")은 application.properties에서 경로설정해준다.<br>
+itemReviewImgLocation=C:/shop/itemReview<br>
+@Value("${}")사용하려면 import org.springframework.beans.factory.annotation.Value; 로 선언해야 한다.<br>
+
+나중에 수정해야 할것 @Value($)경로, <br>
+파일 병합시 주의해야할점 <br>
+file업로드 경로<br>
+
 
