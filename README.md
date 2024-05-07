@@ -402,3 +402,22 @@ itemReviewImgLocation=C:/shop/itemReview<br>
 file업로드 경로<br>
 
 
+#0507<br>
+itemReview/list만들기<br>
+
+시작시 root에서 flowerdb만들기<br>
+
+★ Access denied for user 'floweruser'@'localhost'<br>
+에러발생하면 하이디에서 db, 사용자계정 만들기<br>
+
+일단 view도 추가하기<br>
+
+댓글도 리스트 만들고 나중에 추가<br>
+
+★ Project > Diagrams클릭하면 table나온다<br>
+
+board.css파일 만들어서 헤더에 추가함<br>
+
+템플릿사용<br>
+이미지파일 get사용하려면 images/에 이미지 있어야한다. update만들기<br>
+
