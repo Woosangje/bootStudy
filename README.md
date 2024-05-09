@@ -421,3 +421,16 @@ board.css파일 만들어서 헤더에 추가함<br>
 템플릿사용<br>
 이미지파일 get사용하려면 images/에 이미지 있어야한다. update만들기<br>
 
+
+#0509<br>
+첨부파일<br>
+파일업로드 보류, 평점입력하기<br>
+
+
+Notice list코드 한줄 수정 pageList 변수 못만들어서 수정<br>
+
+깃에 코드많이 올리기<br>
+자바 11버전과 17버전의 차이<br>
+
+★파일업로드 update할경우 id,rno 값 hidden으로 선언해줘야된다.<br>
+★Post로 웹에서 값받아올떄 name=title, content제대로 입력해줘야한다.<br>
