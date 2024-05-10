@@ -406,3 +406,31 @@ Notice list코드 한줄 수정 pageList 변수 못만들어서 수정<br>
 
 ★파일업로드 update할경우 id,rno 값 hidden으로 선언해줘야된다.<br>
 ★Post로 웹에서 값받아올떄 name=title, content제대로 입력해줘야한다.<br>
+
+
+#0510<br>
+파일 새로 받고 인텔리제이에서 db도 새로고침해주기<br>
+회원가입하려면 namt=_csrf 토큰필요<br>
+평가 reply있는 이미지로 게시하기<br>
+aws평가 작성하기<br>
+
+itemReview<br>
+등록,read,list완료<br>
+수정하기 파일업로드 개선해야한다.<br>
+
+★ 파일업로드 기능있는데 constroller에서 db에 Image테이블을 추가안해준다면 <br>
+properties의 파일경로 대로 폴더(iamges)가 있는지 확인할것<br>
+★ properties는 uploadPath=file:///C:/upload/images<br>
+
+★ 요금 정책 관리<br>
+wf.msc<br>
+aws반드시 해결하기,월요일노트북 들고가기<br>
+
+itemReview는 별도의 css/board.css를 만들었습니다.<br>
+layout.html에 <link rel="stylesheet" th:href="@{/css/board.css}"/> 를 추가해줘야합니다.<br>
+static에 images, images/item 폴더 만들었습니다.<br>
+★ itemReview Entity rno이름 reply엔티티의 rno와 겹쳐서 irno로수정하였습니다.<br>
+6시에 추가한 부분만 형님에게 제출하기<br>
+★이미지 업로드된것 깨지는거 나중에 해결하기<br>
+댓글 작업 해야한다<br>
+
