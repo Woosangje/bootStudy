@@ -434,3 +434,28 @@ static에 images, images/item 폴더 만들었습니다.<br>
 ★이미지 업로드된것 깨지는거 나중에 해결하기<br>
 댓글 작업 해야한다<br>
 
+#0513<br>
+★ .java에서 변수명 선언했어도 ajax에서는 reply.regDate로 선언해야 값이 출력된다.<br>
+최대한 Dto의 변수명과 entity의 변수명을 일치시켜주자<br>
+
+저는 ~라고합니다.<br>
+4명이서 main제외8개정도<br>
+
+버그리포트 엑셀이나사이트만들기<br>
+게임서버에서 데이터긁어오기<br>
+
+ppt에 erd넣기<br>
+테스트 결제<br>
+
+ppt에 기능 확실히 써놓기<br>
+
+공지사항에 ppt업로드할수 있게 만들어놓기<br>
+
+
+static/css/board.css추가<br>
+layout.html에 <link rel="stylesheet" th:href="@{/css/board.css}"/> 추가<br>
+
+/images경로로 이미지 출력하고싶으면 이렇게 해야합니다.<br>
+itemImgLocation=C:/upload/images/item<br>
+uploadPath=file:///C:/upload/images/<br>
+
