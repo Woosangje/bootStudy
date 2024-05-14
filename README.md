@@ -459,3 +459,16 @@ layout.html에 <link rel="stylesheet" th:href="@{/css/board.css}"/> 추가<br>
 itemImgLocation=C:/upload/images/item<br>
 uploadPath=file:///C:/upload/images/<br>
 
+
+#0514<br>
+★ 파일 제출할때 member랑 기타 파일들도 깔끔하게 삭제하고 제출하기<br>
+spring.main.allow-circular-references = true	properties에 붙이기<br>
+
+
+책에있는 별점주기기능은 ajax방식으로 데이터가 선언되어야 사용가능하다.<br>
+한4시쯤에 flower로 수정해서 올리기<br>
+계정번호로 수정 버튼노출시키기<br>
+
+<li sec:authorize="isAuthenticated() and !hasAuthority('ADMIN')"> 수정버튼응용하기<br>
+
+내일자소서 쓰기<br>
