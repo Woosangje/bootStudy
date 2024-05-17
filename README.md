@@ -472,3 +472,37 @@ spring.main.allow-circular-references = true	properties에 붙이기<br>
 <li sec:authorize="isAuthenticated() and !hasAuthority('ADMIN')"> 수정버튼응용하기<br>
 
 내일자소서 쓰기<br>
+
+
+
+#0517<br>
+https://taegon.kim/archives/9919 퍼지<br>
+https://youtu.be/NPRh2v7PTZg?si=_52UbKupLf2gHhVo 시큐리티<br>
+https://substantial-park-a17.notion.site/14-JWT-3721466022d24a2fad0e7272e5b15c76<br>
+https://blogshine.tistory.com/445 <br>
+https://jaime-note.tistory.com/15 Jackson의 모든 것 - 역 직렬화 편<br>
+http://mbc-webcloud.iptime.org:3000/  <br>
+https://velog.io/@kimphysicsman/AWS-%EC%9A%94%EA%B8%88-%EC%B2%AD%EA%B5%AC-%EA%B5%AC%EC%A0%9C%EB%B0%9B%EA%B8%B0<br>
+aws 요금청구 구제받기<br>
+https://youtu.be/propgtDEMgM?si=OrdNR9Xw02mgupKl<br>
+aws 한번보기<br>
+
+
+한달안에 취업할수 있도록 계획 짜기<br>
+개인프로젝트 필요하다면 선생님이 주신 ip로 프로젝트 게시하기 포트번호 중복되지 않게 형님과 상의할것<br>
+프로젝트 시작하기 전에 손으로 작성해보기<br>
+면접 사진 찍기, 이력서 수정해서 담당자에게 주기<br>
+공지게시판에 ppt올릴수 있도록 수정하기 , admin만 수정 버튼 볼수 있게 수정하기<br>
+글삭제시 삭제 탭에서 별도로 관리하기<br>
+
+ppt 설명<br>
+일정관리<br>
+Thymeleaf설명<br>
+어노테이션 설명<br>
+Querydsl 코드, 검색조건<br>
+
+---------------<br>
+이미지 설명<br>
+코드 코드<br>
+---------------<br>
+
