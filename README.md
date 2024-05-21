@@ -319,24 +319,19 @@ com.shop인지 org.zerock인지 확실히 입력할것<br>
 
 ★th:field =*{ntitle}"선언하려면 부모영역에 #{DTO}가 있어야 한다. 
 *{nTitle} 빨간줄이어도 정상작동된다. 오히려 *{noticeFormDto.nTitle}가 작동안됨<br>
-html에서 빨간줄 떠도 작동 되면 신경쓰지말것<br>
+html에서 빨간줄 뜨는 거 해결하려면 Dto와 entity의 변수이름 일치시켜줄 것<br>
 
 
 # 0502
 
 567월이 취업타이밍<br>
 
-notice/list에서 read,modify로 이동할경우 keyword가져갈수있게 작업해야한다.<br>
+notice/list에서 read,modify로 이동할경우 페이징,서치 keyword가져갈수있게 작업해야한다.<br>
 공유폴더 ogoods 참고하기<br>
 
 ★조회수 NoticeService.java에서 (readOnly=true)로 선언해서 조회수 추가안되서 애먹음<br>
 
 #0503
-
-일단은 다 붙이기
-시험 두과목씩 보아야함 spring, boot, c , phyton ,git 시간 나는대로 만들어서줘
-
-파이썬 정답 조원들끼리 이거는 하나씩 만들어보자 금요일
 
 ★ redirectAttributes : 간단하게 설명하면 Post후 어느 페이지로 이동할 것인지
 ★ th:formaction="@{'/notice/modify/' + ${noticeFormDto.nno} }"  controller.java의 경로
@@ -351,10 +346,7 @@ notice/list에서 read,modify로 이동할경우 keyword가져갈수있게 작�
 ########   작업 #######
 
 https://fmflowermall.com/goods/goods_detail/prd_code/dbc188b6eb/cname/6r2D67CU6rWs64uI#goods_detail_tab5
-상품평, 이용후기
-내가만들거: 문의게시판 리뷰게시판
 
-해야할일 member계정 간단하게 만들고 ItemReview와 ItemReviewImg를 연결한다.( static으로 관리하기)
 
 
 #0506<br>
@@ -395,50 +387,27 @@ board.css파일 만들어서 헤더에 추가함<br>
 
 
 #0509<br>
-첨부파일<br>
-파일업로드 보류, 평점입력하기<br>
-
-
-Notice list코드 한줄 수정 pageList 변수 못만들어서 수정<br>
 
 깃에 코드많이 올리기<br>
 자바 11버전과 17버전의 차이<br>
 
-★파일업로드 update할경우 id,rno 값 hidden으로 선언해줘야된다.<br>
 ★Post로 웹에서 값받아올떄 name=title, content제대로 입력해줘야한다.<br>
 
 
 #0510<br>
 파일 새로 받고 인텔리제이에서 db도 새로고침해주기<br>
 회원가입하려면 namt=_csrf 토큰필요<br>
-평가 reply있는 이미지로 게시하기<br>
-aws평가 작성하기<br>
 
-itemReview<br>
-등록,read,list완료<br>
-수정하기 파일업로드 개선해야한다.<br>
 
 ★ 파일업로드 기능있는데 constroller에서 db에 Image테이블을 추가안해준다면 <br>
 properties의 파일경로 대로 폴더(iamges)가 있는지 확인할것<br>
 ★ properties는 uploadPath=file:///C:/upload/images<br>
 
-★ 요금 정책 관리<br>
-wf.msc<br>
-aws반드시 해결하기,월요일노트북 들고가기<br>
-
-itemReview는 별도의 css/board.css를 만들었습니다.<br>
-layout.html에 <link rel="stylesheet" th:href="@{/css/board.css}"/> 를 추가해줘야합니다.<br>
-static에 images, images/item 폴더 만들었습니다.<br>
-★ itemReview Entity rno이름 reply엔티티의 rno와 겹쳐서 irno로수정하였습니다.<br>
-6시에 추가한 부분만 형님에게 제출하기<br>
-★이미지 업로드된것 깨지는거 나중에 해결하기<br>
-댓글 작업 해야한다<br>
 
 #0513<br>
 ★ .java에서 변수명 선언했어도 ajax에서는 reply.regDate로 선언해야 값이 출력된다.<br>
 최대한 Dto의 변수명과 entity의 변수명을 일치시켜주자<br>
 
-저는 ~라고합니다.<br>
 4명이서 main제외8개정도<br>
 
 버그리포트 엑셀이나사이트만들기<br>
@@ -446,11 +415,6 @@ static에 images, images/item 폴더 만들었습니다.<br>
 
 ppt에 erd넣기<br>
 테스트 결제<br>
-
-ppt에 기능 확실히 써놓기<br>
-
-공지사항에 ppt업로드할수 있게 만들어놓기<br>
-
 
 static/css/board.css추가<br>
 layout.html에 <link rel="stylesheet" th:href="@{/css/board.css}"/> 추가<br>
