@@ -470,3 +470,5 @@ Querydsl 코드, 검색조건<br>
 코드 코드<br>
 ---------------<br>
 
+http://mbc-webcloud.iptime.org:8013/home 와쳐피디아 팀프로젝트
+http://mbc-webcloud.iptime.org:8013/Subway/Main/main.jsp 서브웨이 팀프로젝트
